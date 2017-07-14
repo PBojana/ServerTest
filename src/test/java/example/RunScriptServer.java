@@ -31,10 +31,10 @@ public class RunScriptServer  {
 
 	@Before
 	public void setUp() throws Exception {
-		//  driver = new FirefoxDriver();
+		 
 		 
 		 baseUrl = "http://zabegan-001-site18.itempurl.com/Login/Index#";
-		//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 	}
 
@@ -44,14 +44,13 @@ public class RunScriptServer  {
 		//String service = "C:\\Program Files\\IEDriverServer.exe";
 		 	// System.setProperty("webdriver.ie.driver", service);
 		 	 
-		 	String service = "/usr/bin/google-chrome";
-		 	 System.setProperty("webdriver.chrome.driver", service);
+		 	//String service = "/usr/bin/google-chrome";
+		 	 //System.setProperty("webdriver.chrome.driver", service);
 			 
 	    	//WebDriver driver = new FirefoxDriver();
 		 	// WebDriver  driver = new InternetExplorerDriver();
-		 	 WebDriver  driver = new ChromeDriver();
-		 	 driver.close();
-		 	 driver.quit();
+		 	// WebDriver  driver = new ChromeDriver();
+		  driver = new FirefoxDriver();
 		 	 driver.get(baseUrl);
 
 			if (driver.findElements(By.id("username")).isEmpty()){
