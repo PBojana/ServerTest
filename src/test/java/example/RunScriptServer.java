@@ -44,7 +44,7 @@ public class RunScriptServer  {
 		//String service = "C:\\Program Files\\IEDriverServer.exe";
 		 	// System.setProperty("webdriver.ie.driver", service);
 		 	 
-		 	String service = "C:\\Program Files\\chromedriver.exe";
+		 	String service = "/usr/bin/google-chrome";
 		 	 System.setProperty("webdriver.chrome.driver", service);
 			 
 	    	//WebDriver driver = new FirefoxDriver();
