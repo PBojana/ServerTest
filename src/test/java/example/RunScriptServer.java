@@ -29,9 +29,9 @@ public class RunScriptServer  {
 
 	@Before
 	public void setUp() throws Exception {
-		driver = new FirefoxDriver();
-		baseUrl = "http://zabegan-001-site18.itempurl.com/Login/Index#";
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		// driver = new FirefoxDriver();
+		//baseUrl = "http://zabegan-001-site18.itempurl.com/Login/Index#";
+	//	driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 	}
 
@@ -39,10 +39,8 @@ public class RunScriptServer  {
 	public void test() {
 
 	
-		driver.get(baseUrl);
-		
-		
-		 
+		/*driver.get(baseUrl);
+
 			if (driver.findElements(By.id("username")).isEmpty()){
 		        System.out.println("Vleze vo if ");
 			   final String username = "jenkinss4e@gmail.com";
@@ -82,7 +80,8 @@ public class RunScriptServer  {
 				        
 			}        
 		        else
-		    	 System.out.println("Vleze vo else ");
+		    	 System.out.println("Vleze vo else ");*/
+		System.out.println("TEst Hello ");
 		    }
 		}
 	
