@@ -50,7 +50,9 @@ public class RunScriptServer  {
 	    	//WebDriver driver = new FirefoxDriver();
 		 	// WebDriver  driver = new InternetExplorerDriver();
 		 	 WebDriver  driver = new ChromeDriver();
-		 driver.get(baseUrl);
+		 	 driver.close();
+		 	 driver.quit();
+		 	 driver.get(baseUrl);
 
 			if (driver.findElements(By.id("username")).isEmpty()){
 		        System.out.println("Vleze vo if ");
