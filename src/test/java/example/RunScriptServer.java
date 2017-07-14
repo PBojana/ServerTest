@@ -17,7 +17,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class RunScriptServer  {
@@ -41,11 +41,15 @@ public class RunScriptServer  {
 	@Test
 	public void test() {
 
-		String service = "C:\\Program Files\\IEDriverServer.exe";
-		 	 System.setProperty("webdriver.ie.driver", service);
+		//String service = "C:\\Program Files\\IEDriverServer.exe";
+		 	// System.setProperty("webdriver.ie.driver", service);
+		 	 
+		 	String service = "C:\\Program Files\\chromedriver.exe";
+		 	 System.setProperty("webdriver.chrome.driver", service);
 			 
 	    	//WebDriver driver = new FirefoxDriver();
-		 	 WebDriver  driver = new InternetExplorerDriver();
+		 	// WebDriver  driver = new InternetExplorerDriver();
+		 	 WebDriver  driver = new ChromeDriver();
 		 driver.get(baseUrl);
 
 			if (driver.findElements(By.id("username")).isEmpty()){
