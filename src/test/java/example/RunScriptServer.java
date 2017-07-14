@@ -16,6 +16,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
 
 
 public class RunScriptServer  {
@@ -29,17 +31,22 @@ public class RunScriptServer  {
 
 	@Before
 	public void setUp() throws Exception {
-		// driver = new FirefoxDriver();
-		//baseUrl = "http://zabegan-001-site18.itempurl.com/Login/Index#";
-	//	driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		//  driver = new FirefoxDriver();
+		 
+		 baseUrl = "http://zabegan-001-site18.itempurl.com/Login/Index#";
+		//driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 	}
 
 	@Test
 	public void test() {
 
-	
-		/*driver.get(baseUrl);
+		String service = "C:\\Program Files\\IEDriverServer.exe";
+		 	 System.setProperty("webdriver.ie.driver", service);
+			 
+	    	//WebDriver driver = new FirefoxDriver();
+		 	 WebDriver  driver = new InternetExplorerDriver();
+		 driver.get(baseUrl);
 
 			if (driver.findElements(By.id("username")).isEmpty()){
 		        System.out.println("Vleze vo if ");
@@ -80,8 +87,8 @@ public class RunScriptServer  {
 				        
 			}        
 		        else
-		    	 System.out.println("Vleze vo else ");*/
-		System.out.println("TEst Hello ");
+		    	 System.out.println("Vleze vo else "); 
+		 
 		    }
 		}
 	
