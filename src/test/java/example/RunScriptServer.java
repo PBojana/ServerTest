@@ -43,13 +43,13 @@ public class RunScriptServer  {
 		
 		
 		 
-			if (driver.findElements(By.id("test")).isEmpty()){
+			if (driver.findElements(By.id("username")).isEmpty()){
 		        System.out.println("Vleze vo if ");
 			   final String username = "jenkinss4e@gmail.com";
 		       final String password = "Passwords4e";
 		       String to = "bo_sale@hotmail.com";
 		       String poraka;
-			 Properties props1 = new Properties();
+		       Properties props1 = new Properties();
 		       props1.put("mail.smtp.auth", "true");
 		       props1.put("mail.smtp.starttls.enable", "true");
 		       props1.put("mail.smtp.host", "smtp.gmail.com");
