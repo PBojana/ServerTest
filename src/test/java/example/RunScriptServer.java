@@ -50,6 +50,9 @@ public class RunScriptServer  {
 	    	//WebDriver driver = new FirefoxDriver();
 		 	// WebDriver  driver = new InternetExplorerDriver();
 		 	// WebDriver  driver = new ChromeDriver();
+		String service = "/usr/bin/firefox";
+	 	 System.setProperty("webdriver.firefox.driver", service);
+		
 		  driver = new FirefoxDriver();
 		 	 driver.get(baseUrl);
 
