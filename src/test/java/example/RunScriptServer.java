@@ -34,7 +34,7 @@ public class RunScriptServer  {
 		 
 		 
 		 baseUrl = "http://zabegan-001-site18.itempurl.com/Login/Index#";
-		 driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+		// driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 	}
 
