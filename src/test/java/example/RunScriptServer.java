@@ -50,7 +50,7 @@ public class RunScriptServer  {
 	    	//WebDriver driver = new FirefoxDriver();
 		 	// WebDriver  driver = new InternetExplorerDriver();
 		 	// WebDriver  driver = new ChromeDriver();
-		String service = "/usr/bin/firefox";
+	/*	String service = "/usr/bin/firefox";
 	 	 System.setProperty("webdriver.firefox.driver", service);
 		
 		  driver = new FirefoxDriver();
@@ -96,7 +96,8 @@ public class RunScriptServer  {
 			}        
 		        else
 		    	 System.out.println("Vleze vo else "); 
-		 
+		 */
+		System.out.println("Hello ...... "); 
 		    }
 		}
 	
